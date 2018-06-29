@@ -26,3 +26,115 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  z-index: 10;
+}
+
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 14px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.clash-card__image--barbarian {
+  background: url('https://st.depositphotos.com/1026550/3109/i/450/depositphotos_31090741-stock-photo-football-field.jpg');
+}
+
+
+.clash-card__level {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+  color: #EC9B3B;
+}
+
+.clash-card__unit-name {
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clash-card__unit-description {
+  padding: 20px;
+  margin-bottom: 10px;  
+}
+
+.one-third {
+  border-right: 1px solid #BD7C2F;
+}
+
+.clash-card__unit-stats--barbarian {
+  background-color: #EC9B3B;
+}
+
+.clash-card__unit-stats {
+  
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.one-third {
+  width: 33%;
+  float: left;
+  padding: 20px 15px;
+}
+sup {
+  position: absolute;
+  bottom: 4px; 
+  font-size: 45%;
+  margin-left: 2px;
+}
+
+.stat {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.no-border {
+  border-right: none;
+  }
+
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}

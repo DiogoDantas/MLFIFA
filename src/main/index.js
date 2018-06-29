@@ -1,5 +1,4 @@
 import React from 'react';
-import { logo } from '../assets/index';
 import '../styles/App.css';
 import SinglePage from '../views/SinglePage';
 import { Provider } from 'react-redux';

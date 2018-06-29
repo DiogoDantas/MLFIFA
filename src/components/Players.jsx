@@ -12,6 +12,7 @@ const styles = {
         marginTop: 63,
         backgroundColor: colors.secondary,
         padding: 20,
+        flex: 1,
     } ,
     buttonFilter: {
         margin: '20px',
@@ -21,7 +22,7 @@ const styles = {
 class Players extends Component {
 
     componentDidMount() {
-       this.props.fetchPlayersRequest(this.props.page)   
+       this.props.fetchPlayersRequest(this.props.page)
     }
 
     render() {
@@ -43,9 +44,9 @@ class Players extends Component {
                         Overall
                     </button>
                     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a className="dropdown-item">Action</a>
-                        <a className="dropdown-item">Another action</a>
-                        <a className="dropdown-item">Something else here</a>
+                        <a className="dropdown-item"> maior que 90</a>
+                        <a className="dropdown-item"> maior que 80 </a>
+                        <a className="dropdown-item"> menor que 70 </a>
                     </div>
                 </div>
 
@@ -54,12 +55,14 @@ class Players extends Component {
                         Potencial
                     </button>
                     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a className="dropdown-item">Action</a>
-                        <a className="dropdown-item">Another action</a>
-                        <a className="dropdown-item">Something else here</a>
+                        <a className="dropdown-item"> maior que 90</a>
+                        <a className="dropdown-item"> maior que 80 </a>
+                        <a className="dropdown-item"> menor que 70 </a>
                     </div>
                 </div>
-                { this.props.data.map(player => <PlayerItem key={player.id} player={player}/>)}
+                <div className="d-flex flex-wrap flex-row align-items-center justify-content-center">
+                    { this.props.data.map(player => <PlayerItem key={player.id} player={player}/>)}
+                </div>
             </div>
         );
     }

@@ -1,6 +1,6 @@
 const initialState = [];
 
-export default function(state=initialState, action){
+export default function players(state=initialState, action){
     switch(action.type) {
         case "FETCH_PLAYERS_SUCCESS":
             return [...state, ...action.payload.data];

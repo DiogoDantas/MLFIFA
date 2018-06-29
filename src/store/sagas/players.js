@@ -3,6 +3,6 @@ import { call, put } from 'redux-saga/effects';
 import { fetchPlayersSuccess } from '../actions/players'
 
 export function* fetchPlayersRequest(action) {
-    const response = yield call(api.get, `/players/?page=${action.payload.page}`);
+    const response = yield call(api.get, `/players/?page=${action.payload.page}`, {crossdomain:true});
     yield put(fetchPlayersSuccess(response.data.results));
 }
